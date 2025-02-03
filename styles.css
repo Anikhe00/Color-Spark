@@ -47,7 +47,7 @@ main {
 }
 
 h1 {
-font-size: 3.5rem;
+font-size: 3.25rem;
 font-style: normal;
 font-weight: 700;
 line-height: 140%;
@@ -104,6 +104,7 @@ button {
   width: 100%;
   display: flex;
   padding: 24px;
+  justify-content: center;
   align-items: flex-end;
   flex: 1 0 0;
   align-self: stretch;
@@ -159,6 +160,37 @@ button {
   border-radius: 100%;
 }
 
+.copy-icon-box {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #333E51;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 5px;
+  position: absolute;
+  top: -30px; /* Adjust for positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.copy-icon-box:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 @media screen and (max-width: 64rem) {
   header {
     width: 100%;
@@ -195,6 +227,7 @@ button {
     .color-box {
       display: flex;
       padding: 1rem;
+      justify-content: center;
       align-items: flex-end;
       flex: 1 0 0;
       align-self: stretch;
@@ -269,6 +302,7 @@ button {
       padding: 1.25rem 1.25rem 1.75rem 1.25rem;
       align-items: flex-end;
       flex: 1 0 0;
+      justify-content: center;
       align-self: stretch;
       border-radius: 0.75rem 0.75rem 0 0;
     }
@@ -282,7 +316,7 @@ button {
       align-items: start;
       border-radius: 0.75rem;
       background-color: #F2F4F7;
-      overflow: visible;
+      overflow: hidden;
     }
 
     #second-color {
