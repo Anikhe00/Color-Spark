@@ -90,25 +90,25 @@ button.addEventListener("click", function(){
   for(let i = 0; i < 6; i++){
     firstColorHexCode += hexaDecimalNumbers[generateRandomNumber()];
   }
-  applyColor(firstColor, firstColorHexCode, firstHexCode, document.querySelector("#first-tooltip"));
+  applyColor(firstColor, firstColorHexCode, firstHexCode, firstTooltip);
 
   let secondColorHexCode = "#";
   for(let i = 0; i < 6; i++){
     secondColorHexCode += hexaDecimalNumbers[generateRandomNumber()];
   }
-  applyColor(secondColor, secondColorHexCode, secondHexCode, document.querySelector("#second-tooltip"));
+  applyColor(secondColor, secondColorHexCode, secondHexCode, secondTooltip);
 
   let thirdColorHexCode = "#";
   for(let i = 0; i < 6; i++){
     thirdColorHexCode += hexaDecimalNumbers[generateRandomNumber()];
   }
-  applyColor(thirdColor, thirdColorHexCode, thirdHexCode, document.querySelector("#third-tooltip"));
+  applyColor(thirdColor, thirdColorHexCode, thirdHexCode, thirdTooltip);
 
   let fourthColorHexCode = "#";
   for(let i = 0; i < 6; i++){
     fourthColorHexCode += hexaDecimalNumbers[generateRandomNumber()];
   }
-  applyColor(fourthColor, fourthColorHexCode, fourthHexCode, document.querySelector("#fourth-tooltip"));
+  applyColor(fourthColor, fourthColorHexCode, fourthHexCode, fourthTooltip);
 });
 
 
