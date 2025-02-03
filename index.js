@@ -164,3 +164,13 @@ document.querySelectorAll(".copy-icon-box").forEach(copyButton => {
     });
   });
 });
+
+// Space bar intiate button click and escape initiate reset
+document.addEventListener("keydown", function(event) {
+  if (event.code === "Space") { 
+    event.preventDefault(); 
+    button.click(); 
+  } else if (event.code === "Escape") { 
+    resetButton.click(); 
+  }
+});
