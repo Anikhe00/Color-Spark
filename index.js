@@ -144,7 +144,7 @@ resetButton.addEventListener("click", function(){
 // Copy
 const copyButton = document.querySelectorAll(".copy-icon-box")
 
-document.querySelectorAll(".copy-icon-box").forEach(copyButton => {
+copyButton.forEach(copyButton => {
   copyButton.addEventListener("click", function() {
     const hexCodeElement = this.previousElementSibling; 
 
